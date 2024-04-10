@@ -16,6 +16,15 @@
             {
                 Console.WriteLine(contatto);
             }
+            Console.WriteLine("Inserisci Nome da ricercare: ");
+             if (contatti.Contains(Console.ReadLine()))
+            {
+                Console.WriteLine("Il contatto è presente nella lista.");
+            }
+            else
+            {
+                Console.WriteLine("Il contatto non è presente nella lista.");
+            }
         }
     }
 }
