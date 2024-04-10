@@ -8,6 +8,9 @@
             contatti.Add("Primo elemento");
             contatti.Add("Secondo elemento");
             contatti.Add("Terzo elemento");
+
+            Console.Write("Inserire nome Contatto: ");
+            contatti.Add(Console.ReadLine());
         }
     }
 }
