@@ -11,6 +11,11 @@
 
             Console.Write("Inserire nome Contatto: ");
             contatti.Add(Console.ReadLine());
+
+            foreach (string contatto in contatti)
+            {
+                Console.WriteLine(contatto);
+            }
         }
     }
 }
