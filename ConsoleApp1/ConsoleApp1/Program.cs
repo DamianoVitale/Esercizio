@@ -5,9 +5,9 @@
         static void Main(string[] args)
         {
             List<string> contatti = new List<string>();
-            contatti.Add("Primo elemento");
-            contatti.Add("Secondo elemento");
-            contatti.Add("Terzo elemento");
+            contatti.Add("Damiano");
+            contatti.Add("Mario");
+            contatti.Add("Andrea");
 
             Console.Write("Inserire nome Contatto: ");
             contatti.Add(Console.ReadLine());
@@ -16,15 +16,19 @@
             {
                 Console.WriteLine(contatto);
             }
-            Console.WriteLine("Inserisci Nome da ricercare: ");
+            Console.WriteLine("\nInserisci Nome da ricercare: ");
              if (contatti.Contains(Console.ReadLine()))
             {
-                Console.WriteLine("Il contatto è presente nella lista.");
+                Console.WriteLine("\nIl contatto è presente nella lista.");
             }
             else
             {
-                Console.WriteLine("Il contatto non è presente nella lista.");
+                Console.WriteLine("\nIl contatto non è presente nella lista.");
             }
+
+            Console.WriteLine("\nInserire il nome del contatto da eliminare: ");
+            contatti.Remove(Console.ReadLine());
+
         }
     }
 }
